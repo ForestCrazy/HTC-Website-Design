@@ -14,132 +14,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: 'Kanit', sans-serif;
-        }
-
-        .bg-purple-gd {
-            background: linear-gradient(60deg, #ab47bc, #7b1fa2);
-        }
-
-        .card-cascade.narrower.section-header {
-            transform: translate(20px, 20px);
-            z-index: 2;
-        }
-
-        .w-fit-content {
-            width: fit-content !important;
-        }
-
-        .wh-media-object {
-            width: 60px;
-            height: 60px;
-        }
-
-        .activity-collage-img {
-            height: 100px !important;
-            max-height: 100px !important;
-        }
-
-        .activity-collage-text {
-            height: 100px;
-            max-height: 100px;
-        }
-
-        body::-webkit-scrollbar,
-        .activity-collage-text::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        body::-webkit-scrollbar-track,
-        .activity-collage-text::-webkit-scrollbar-track {
-            background-color: #e4e4e4;
-            border-radius: 100px;
-        }
-
-        body::-webkit-scrollbar-thumb,
-        .activity-collage-text::-webkit-scrollbar-thumb {
-            border-radius: 100px;
-            background-image: linear-gradient(90deg, rgba(204, 75, 201, 1) 0%, rgba(185, 48, 190, 1) 99%);
-            box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-        }
-
-        .iframe-responsive {
-            max-width: 600px;
-        }
-
-        .accordion-text,
-        .list-group-text {
-            font-size: 0.5rem;
-        }
-
-        @media (max-width: 576px) {
-            .iframe-responsive {
-                width: calc(100vw - 100px);
-            }
-
-            .accordion-text {
-                padding: 0rem 0.25rem;
-            }
-        }
-
-        @media (min-width: 576px) {
-            .iframe-responsive {
-                width: calc(100vw - 330px);
-            }
-
-            .accordion-text {
-                padding: 0.5rem 0.5rem;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .w-fb-page {
-                width: 340px !important;
-            }
-
-            .iframe-responsive {
-                width: calc(100vw - 480px);
-            }
-
-            .accordion-text {
-                padding: 0.75rem 0.75rem;
-            }
-
-            .accordion-text,
-            .list-group-text {
-                font-size: 0.75rem;
-            }
-        }
-
-        @media (min-width: 922px) {
-            .iframe-responsive {
-                width: calc(100vw - 550px);
-            }
-
-            .accordion-text {
-                padding: 1rem 1rem;
-            }
-
-            .accordion-text,
-            .list-group-item {
-                font-size: 1rem;
-            }
-        }
-
-        .collage-info .collage-info-text {
-            height: 100px;
-            max-height: 100px;
-        }
-
-        .text-wrapper-flex {
-            display: -webkit-box;
-            overflow: hidden;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-        }
-    </style>
+    <link href="index.css" rel="stylesheet" />
 </head>
 
 <body class="bg-secondary">
@@ -167,11 +42,10 @@
                     <ul class="flex-row"></ul>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 text-bold d-flex justify-content-lg-around">
                         <li class="nav-item">
-                            <a class="nav-link" href="">หน้าหลัก</a>
+                            <a class="nav-link" href="index.html">หน้าหลัก</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" role="button"
-                                onclick="$('#boardManagerCollage').modal('show')">คณะผู้บริหาร</a>
+                            <a class="nav-link" href="boardManager.html">คณะผู้บริหาร</a>
                         </li>
                         <li class="nav-item dropdown position-static">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -720,6 +594,27 @@
                 </div>
                 <div class="accordion mt-2" id="accordionExample">
                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button accordion-text" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                ข้อมูลสารสนเทศ
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix"
+                            data-mdb-parent="#accordionExample">
+                            <div class="accordion-body p-0">
+                                <ul class="list-group rounded-0">
+                                    <li class="list-group-item list-group-text"><a class="text-dark"
+                                            href="personnel.html">ข้อมูลบุคลากร</a></li>
+                                    <li class="list-group-item list-group-text"><a class="text-dark"
+                                            href="courses.html">ข้อมูลหลักสูตร</a></li>
+                                    <li class="list-group-item list-group-text"><a class="text-dark"
+                                            href="student.html">ข้อมูลนักเรียน นักศึกษา</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed accordion-text" type="button"
                                 data-mdb-toggle="collapse" data-mdb-target="#collapseOne" aria-expanded="false"
@@ -730,7 +625,7 @@
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
-                                <ul class="list-group border border-0">
+                                <ul class="list-group rounded-0">
                                     <li class="list-group-item list-group-text">แบบข้อตกลงในการพัฒนางาน PA1</li>
                                     <li class="list-group-item list-group-text">
                                         แบบเสนอคำขอเพื่อขอมีหรือขอเลื่อนวิทยฐานนะ</li>
@@ -759,7 +654,7 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
-                                <ul class="list-group border border-0">
+                                <ul class="list-group rounded-0">
                                     <li class="list-group-item list-group-text">คู่มือนักเรียน นักศึกษา</li>
                                 </ul>
                             </div>
@@ -776,7 +671,7 @@
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
-                                <ul class="list-group border border-0">
+                                <ul class="list-group rounded-0">
                                     <li class="list-group-item list-group-text">เผยแพร่วิจัยในชั้นเรียน 2564</li>
                                     <li class="list-group-item list-group-text">วิจัยฝ่ายบริหาร</li>
                                     <li class="list-group-item list-group-text">สิ่งประดิษฐ์ 2563</li>
@@ -804,7 +699,7 @@
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
-                                <ul class="list-group border border-0">
+                                <ul class="list-group rounded-0">
                                     <li class="list-group-item list-group-text">elearning kampol-vclass</li>
                                     <li class="list-group-item list-group-text">elearning htc-vclass59</li>
                                     <li class="list-group-item list-group-text">elearning htc-vclass54</li>
@@ -823,7 +718,7 @@
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
-                                <ul class="list-group border border-0">
+                                <ul class="list-group rounded-bottom-custom-1">
                                     <li class="list-group-item list-group-text">คู่มืองานปกครอง</li>
                                     <li class="list-group-item list-group-text">ระเบียบการแต่งกายของนักเรียน นักศึกษา
                                     </li>
