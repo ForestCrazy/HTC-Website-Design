@@ -69,13 +69,17 @@
             max-width: 600px;
         }
 
+        .accordion-text,
+        .list-group-text {
+            font-size: 0.5rem;
+        }
+
         @media (max-width: 576px) {
             .iframe-responsive {
                 width: calc(100vw - 100px);
             }
 
             .accordion-text {
-                font-size: 0.25rem;
                 padding: 0rem 0.25rem;
             }
         }
@@ -86,7 +90,6 @@
             }
 
             .accordion-text {
-                font-size: 0.5rem;
                 padding: 0.5rem 0.5rem;
             }
         }
@@ -101,8 +104,12 @@
             }
 
             .accordion-text {
-                font-size: 0.75rem;
                 padding: 0.75rem 0.75rem;
+            }
+
+            .accordion-text,
+            .list-group-text {
+                font-size: 0.75rem;
             }
         }
 
@@ -112,11 +119,15 @@
             }
 
             .accordion-text {
-                font-size: 1rem;
                 padding: 1rem 1rem;
             }
-        }      
-        
+
+            .accordion-text,
+            .list-group-item {
+                font-size: 1rem;
+            }
+        }
+
         .collage-info .collage-info-text {
             height: 100px;
             max-height: 100px;
@@ -271,8 +282,7 @@
     </nav>
     <!-- Navbar -->
     <div class="container">
-        <br />
-        <div class="row">
+        <div class="row mt-2">
             <div class="col-8 col-md-9">
                 <!-- Carousel wrapper -->
                 <div id="carouselBasicExample" class="carousel slide carousel-fade border rounded p-1"
@@ -355,7 +365,8 @@
                                         <img src="http://htc.ac.th/webroot59/mg/img_news/VoX6CRANnQe20220225110708.jpg"
                                             class="me-3 wh-media-object" />
                                         <div class="collage-info-text">
-                                            <small class="text-wrapper-flex">รายชื่อผู้มีสิทธิ์เข้าศึกษาต่อ และกำหนดการมอบตัว
+                                            <small class="text-wrapper-flex">รายชื่อผู้มีสิทธิ์เข้าศึกษาต่อ
+                                                และกำหนดการมอบตัว
                                                 รายงานตัวนักเรียน</small>
                                         </div>
                                     </div>
@@ -369,7 +380,8 @@
                                         <img src="http://htc.ac.th/webroot59/mg/img_news/eIqVRPCexEu20220224155647.jpg"
                                             class="me-3 wh-media-object" />
                                         <div class="collage-info-text">
-                                            <small class="text-wrapper-flex">ประกาศ เรื่อง ให้นักเรียน นักศึกษาที่ผ่านการคัดเลือก
+                                            <small class="text-wrapper-flex">ประกาศ เรื่อง ให้นักเรียน
+                                                นักศึกษาที่ผ่านการคัดเลือก
                                                 ดาวน์โหลดเอกสารมอบตัว และแสดงผลการตรวจ ATK ในวันมอบตัว</small>
                                         </div>
                                     </div>
@@ -383,7 +395,8 @@
                                         <img src="http://htc.ac.th/webroot59/mg/img_news/AkJgfdwhSwB20220224153415.jpg"
                                             class="me-3 wh-media-object" />
                                         <div class="collage-info-text">
-                                            <small class="text-wrapper-flex">ผลการคัดเลือกนักศึกษาใหม่ ระดับ ปวช. และ ปวส.ปีการศึกษา 2565</small>
+                                            <small class="text-wrapper-flex">ผลการคัดเลือกนักศึกษาใหม่ ระดับ ปวช. และ
+                                                ปวส.ปีการศึกษา 2565</small>
                                         </div>
                                     </div>
                                 </div>
@@ -396,7 +409,9 @@
                                         <img src="http://htc.ac.th/webroot59/mg/img_news/Gr6I7Fz8xXi20220223131019.jpg"
                                             class="me-3 wh-media-object" />
                                         <div class="collage-info-text">
-                                            <small class="text-wrapper-flex">ประกาศรายชื่อผู้มีสิทธิสอบคัดเลือกเข้าศึกษาต่อ ระดับปริญญาตรี ประจำปีการศึกษา 2565</small>
+                                            <small
+                                                class="text-wrapper-flex">ประกาศรายชื่อผู้มีสิทธิสอบคัดเลือกเข้าศึกษาต่อ
+                                                ระดับปริญญาตรี ประจำปีการศึกษา 2565</small>
                                         </div>
                                     </div>
                                 </div>
@@ -409,7 +424,9 @@
                                         <img src="http://htc.ac.th/webroot59/mg/img_news/TaqGCJUedUU20220208110603.jpg"
                                             class="me-3 wh-media-object" />
                                         <div class="collage-info-text">
-                                            <small class="text-wrapper-flex">สัปดาห์สุดท้าย !! ของการรับสมัคร นักเรียน นักศึกษาใหม่ เข้าศึกษาต่อที่ วิทยาลัยเทคนิคหาดใหญ่ ประจำปีการศึกษา 2565</small>
+                                            <small class="text-wrapper-flex">สัปดาห์สุดท้าย !! ของการรับสมัคร นักเรียน
+                                                นักศึกษาใหม่ เข้าศึกษาต่อที่ วิทยาลัยเทคนิคหาดใหญ่ ประจำปีการศึกษา
+                                                2565</small>
                                         </div>
                                     </div>
                                 </div>
@@ -433,13 +450,14 @@
                                         <img src="https://www.img.in.th/images/d321b2fbafdca82c70f4ded496ca1662.png"
                                             class="me-3 wh-media-object" />
                                         <div class="collage-info-text">
-                                            <small class="text-wrapper-flex">ประกาศวิทยาลัยเทคนิคหาดใหญ่ เรื่อง กำหนดการรับมอบตัว นักเรียน นักศึกษาใหม่ ระดับชั้น ปวช.1 และ ปวส.1</small>
+                                            <small class="text-wrapper-flex">ประกาศวิทยาลัยเทคนิคหาดใหญ่ เรื่อง
+                                                กำหนดการรับมอบตัว นักเรียน นักศึกษาใหม่ ระดับชั้น ปวช.1 และ
+                                                ปวส.1</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="d-flex collage-info"
-                                        data-info-title="เอกสารมอบตัวนักเรียน นักศึกษา"
+                                    <div class="d-flex collage-info" data-info-title="เอกสารมอบตัวนักเรียน นักศึกษา"
                                         data-info-type="ข่าวเกี่ยวกับนักศึกษา"
                                         data-info-time="24 กุมภาพันธ์ 2565 13:52:06"
                                         data-info-detail='<h3 class="text-center fw-bold">เอกสารมอบตัวนักเรียน นักศึกษา</h3><h5 class="text-center">เอกสารมอบตัวระดับชั้น ปวช &emsp;<a href="https://drive.google.com/file/d/1QYnvjCFAf8cxKOm__VyrC6NGwq53LnrS/view?usp=sharing"><button class="btn btn-primary">คลิก</button></a></h5><h5 class="text-center">เอกสารมอบตัวระดับชั้น ปวส &emsp;<a href="https://drive.google.com/file/d/1bLDCls4xDNfwOIqTAj4yCZV2YYuM3OC4/view?usp=sharing"><button class="btn btn-primary">คลิก</button></a></h5>'>
@@ -703,8 +721,9 @@
                 <div class="accordion mt-2" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed accordion-text" type="button" data-mdb-toggle="collapse"
-                                data-mdb-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed accordion-text" type="button"
+                                data-mdb-toggle="collapse" data-mdb-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
                                 งานบุคลากร
                             </button>
                         </h2>
@@ -712,26 +731,28 @@
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
                                 <ul class="list-group border border-0">
-                                    <li class="list-group-item">แบบข้อตกลงในการพัฒนางาน PA1</li>
-                                    <li class="list-group-item">แบบเสนอคำขอเพื่อขอมีหรือขอเลื่อนวิทยฐานนะ</li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-group-text">แบบข้อตกลงในการพัฒนางาน PA1</li>
+                                    <li class="list-group-item list-group-text">
+                                        แบบเสนอคำขอเพื่อขอมีหรือขอเลื่อนวิทยฐานนะ</li>
+                                    <li class="list-group-item list-group-text">
                                         หลักเกณฑ์และวิธีการประเมินตำแหน่งและวิทยาฐานะข้าราชการครูและบุคลากรทางการศึกษา
                                     </li>
-                                    <li class="list-group-item">แบบประเมินพนักงานราชการ</li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-group-text">แบบประเมินพนักงานราชการ</li>
+                                    <li class="list-group-item list-group-text">
                                         แบบประเมินผลการปฏิบัติงานของข้าราชการครูและบุคลากรทางการศึกษา</li>
-                                    <li class="list-group-item">แบบคำขอมีบัตรประจำตัวของรัฐ</li>
-                                    <li class="list-group-item">คู่มือพลเรือน 03092562</li>
-                                    <li class="list-group-item">ขออนุญาตลงลายมือชื่อปฏิบัติราชการ</li>
-                                    <li class="list-group-item">ขอหนังสือรับรองเป็น</li>
+                                    <li class="list-group-item list-group-text">แบบคำขอมีบัตรประจำตัวของรัฐ</li>
+                                    <li class="list-group-item list-group-text">คู่มือพลเรือน 03092562</li>
+                                    <li class="list-group-item list-group-text">ขออนุญาตลงลายมือชื่อปฏิบัติราชการ</li>
+                                    <li class="list-group-item list-group-text">ขอหนังสือรับรองเป็น</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed accordion-text" type="button" data-mdb-toggle="collapse"
-                                data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed accordion-text" type="button"
+                                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
                                 งานแนะแนว
                             </button>
                         </h2>
@@ -739,15 +760,16 @@
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
                                 <ul class="list-group border border-0">
-                                    <li class="list-group-item">คู่มือนักเรียน นักศึกษา</li>
+                                    <li class="list-group-item list-group-text">คู่มือนักเรียน นักศึกษา</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed accordion-text" type="button" data-mdb-toggle="collapse"
-                                data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed accordion-text" type="button"
+                                data-mdb-toggle="collapse" data-mdb-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
                                 เผยแพร่วิจัย
                             </button>
                         </h2>
@@ -755,23 +777,27 @@
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
                                 <ul class="list-group border border-0">
-                                    <li class="list-group-item">เผยแพร่วิจัยในชั้นเรียน 2564</li>
-                                    <li class="list-group-item">วิจัยฝ่ายบริหาร</li>
-                                    <li class="list-group-item">สิ่งประดิษฐ์ 2563</li>
-                                    <li class="list-group-item">เผยแพร่วิจัยในชั้นเรียน ภาคเรียนที่ 1/2563</li>
-                                    <li class="list-group-item">สิ่งประดิษฐ์ 2562</li>
-                                    <li class="list-group-item">เผยแพร่วิจัยในชั้นเรียน ภาคเรียนที่ 2/2562</li>
-                                    <li class="list-group-item">เผยแพร่วิจัยในชั้นเรียน ภาคเรียนที่ 1/2562</li>
-                                    <li class="list-group-item">เผยแพร่วิจัยในชั้นเรียน</li>
-                                    <li class="list-group-item">สิ่งประดิษฐ์</li>
+                                    <li class="list-group-item list-group-text">เผยแพร่วิจัยในชั้นเรียน 2564</li>
+                                    <li class="list-group-item list-group-text">วิจัยฝ่ายบริหาร</li>
+                                    <li class="list-group-item list-group-text">สิ่งประดิษฐ์ 2563</li>
+                                    <li class="list-group-item list-group-text">เผยแพร่วิจัยในชั้นเรียน ภาคเรียนที่
+                                        1/2563</li>
+                                    <li class="list-group-item list-group-text">สิ่งประดิษฐ์ 2562</li>
+                                    <li class="list-group-item list-group-text">เผยแพร่วิจัยในชั้นเรียน ภาคเรียนที่
+                                        2/2562</li>
+                                    <li class="list-group-item list-group-text">เผยแพร่วิจัยในชั้นเรียน ภาคเรียนที่
+                                        1/2562</li>
+                                    <li class="list-group-item list-group-text">เผยแพร่วิจัยในชั้นเรียน</li>
+                                    <li class="list-group-item list-group-text">สิ่งประดิษฐ์</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed accordion-text" type="button" data-mdb-toggle="collapse"
-                                data-mdb-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <button class="accordion-button collapsed accordion-text" type="button"
+                                data-mdb-toggle="collapse" data-mdb-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
                                 ELEARNING
                             </button>
                         </h2>
@@ -779,17 +805,18 @@
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
                                 <ul class="list-group border border-0">
-                                    <li class="list-group-item">elearning kampol-vclass</li>
-                                    <li class="list-group-item">elearning htc-vclass59</li>
-                                    <li class="list-group-item">elearning htc-vclass54</li>
+                                    <li class="list-group-item list-group-text">elearning kampol-vclass</li>
+                                    <li class="list-group-item list-group-text">elearning htc-vclass59</li>
+                                    <li class="list-group-item list-group-text">elearning htc-vclass54</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed accordion-text" type="button" data-mdb-toggle="collapse"
-                                data-mdb-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <button class="accordion-button collapsed accordion-text" type="button"
+                                data-mdb-toggle="collapse" data-mdb-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
                                 ระเบียบการแต่งกาย
                             </button>
                         </h2>
@@ -797,10 +824,13 @@
                             data-mdb-parent="#accordionExample">
                             <div class="accordion-body p-0">
                                 <ul class="list-group border border-0">
-                                    <li class="list-group-item">คู่มืองานปกครอง</li>
-                                    <li class="list-group-item">ระเบียบการแต่งกายของนักเรียน นักศึกษา</li>
-                                    <li class="list-group-item">ระเบียบการแต่งการวิทยาลัยเทคนิคหาดใหญ่ระดับปวส.</li>
-                                    <li class="list-group-item">ระเบียบการแต่งการวิทยาลัยเทคนิคหาดใหญ่ระดับปวช.</li>
+                                    <li class="list-group-item list-group-text">คู่มืองานปกครอง</li>
+                                    <li class="list-group-item list-group-text">ระเบียบการแต่งกายของนักเรียน นักศึกษา
+                                    </li>
+                                    <li class="list-group-item list-group-text">
+                                        ระเบียบการแต่งการวิทยาลัยเทคนิคหาดใหญ่ระดับปวส.</li>
+                                    <li class="list-group-item list-group-text">
+                                        ระเบียบการแต่งการวิทยาลัยเทคนิคหาดใหญ่ระดับปวช.</li>
                                 </ul>
                             </div>
                         </div>
