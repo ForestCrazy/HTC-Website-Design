@@ -57,6 +57,10 @@ body::-webkit-scrollbar-thumb,
     font-size: 0.5rem;
 }
 
+.iframe-responsive-googledrive {
+    width: 80vw;
+}
+
 @media (max-width: 576px) {
     .iframe-responsive {
         width: calc(100vw - 100px);
