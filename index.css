@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb,
 }
 
 .iframe-responsive-googledrive {
-    width: 80vw;
+    width: 70vw;
 }
 
 @media (max-width: 576px) {
