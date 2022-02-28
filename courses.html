@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hatyai Technical Collage</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body class="bg-secondary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="">
+                <img src="https://www.img.in.th/images/d321b2fbafdca82c70f4ded496ca1662.png" height="64" alt="HTC Logo"
+                    loading="lazy" style="margin-top: -1px" />
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarButtonsExample">
+                <!-- Left links -->
+                <div class="flex-column">
+                    <ul class="flex-row"></ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 text-bold d-flex justify-content-lg-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">หน้าหลัก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="boardManager.html">คณะผู้บริหาร</a>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-mdb-toggle="dropdown" aria-expanded="false">
+                                ภาควิชา
+                            </a>
+                            <div class="dropdown-menu w-100 bg-white" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="row mx-2">
+                                    <ul class="col-lg-4 ps-4">
+                                        <li>
+                                            <a class="dropdown-item" href="#">เทคนิคเครื่องมือกล</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">เทคนิคพลังงาน</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                href="#">เทคโนโลยีเครื่องมือวัดและควบคุมงานปิโตรเลียม</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">ช่างก่อสร้าง</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">ก่อสร้างและโยธา</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">เครื่องเรือนและตกแต่งภายใน</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-lg-4 ps-4">
+                                        <li>
+                                            <a class="dropdown-item" href="#">สำรวจ</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">ช่างเทคนิคสถาปัตยกรรม</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">เทคนิคยานยนต์</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">ช่างกลโรงงาน</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">เทคนิคการเชื่อมและการผลิต</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">ช่างเทคนิคพื้นฐาน</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-lg-4 ps-4">
+                                        <li>
+                                            <a class="dropdown-item" href="#">ช่างไฟฟ้ากำลัง</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">อิเล็กทรอนิกส์</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">การจัดการโลจิสติกส์</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">เครื่องปรับอากาศและทำความเย็น</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">เทคโนโลยีสารสนเทศและการสื่อสาร</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">สามัญสัมพันธ์</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-mdb-toggle="dropdown"
+                                aria-expanded="false">หน่วยงานภายใน</a>
+                            <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="http://htc.ac.th/htc-academic/">ฝ่ายวิชาการ</a></li>
+                                <li><a class="dropdown-item"
+                                        href="http://htc.ac.th/htc-department/">ฝ่ายแผนงานและความร่วมมือ</a></li>
+                                <li><a class="dropdown-item"
+                                        href="http://htc.ac.th/htc-affairs/">ฝ่ายแผนงานและความร่วมมือ</a></li>
+                                <li><a class="dropdown-item" href="http://htc.ac.th/htc-manage">ฝ่ายบริหารทรัพยากร</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button"
+                                onclick="$('#contactCollage').modal('show')">ติดต่อเรา</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button"
+                                onclick="$('#aboutCollage').modal('show')">เกี่ยวกับเรา</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Left links -->
+
+                <!-- <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-link px-3 me-2">Login</button>
+                        <button type="button" class="btn btn-primary me-3">Sign up for free</button>
+                        <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
+                            class="fab fa-github"></i></a>
+                    </div> -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="container">
+        <!-- Tabs navs -->
+        <ul class="nav nav-tabs mb-3 mt-2" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab"
+                    aria-controls="ex1-tabs-1" aria-selected="true">ระดับประกาศนีบัตรวิชาชีพ (ปวช)</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab"
+                    aria-controls="ex1-tabs-2" aria-selected="false">ระดับประกาศนีบัตรวิชาชีพชั้นสูง (ปวส)</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="ex1-tab-3"
+                  data-mdb-toggle="tab"
+                  href="#ex1-tabs-3"
+                  role="tab"
+                  aria-controls="ex1-tabs-3"
+                  aria-selected="false"
+                  >ระดับปริญญาตรี</a
+                >
+              </li>
+        </ul>
+        <!-- Tabs navs -->
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="ex1-content">
+            <div class="tab-pane fade show active table-responsive bg-white border rounded-2" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">ลำดับที่</th>
+                            <th scope="col">ชื่อสาขาวิชา</th>
+                            <th scope="col">ชื่อสาขางาน</th>
+                            <th scope="col">ประเภทวิชา</th>
+                            <th scope="col">เปิดใช้ปีการศึกษา</th>
+                            <th scope="col">ใช้หลักสูตรพุทธศักราช</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>๑</td>
+                            <td>ช่างยนต์</td>
+                            <td>
+                                ๑. ยานยนต์<br/>
+                                ๒. จักรยานยนต์และเครื่องยนต์เล็กอเนกประสงค์
+                            </td>
+                            <td>อุตสาหกรรม</td>
+                            <td>
+                                ๒๕๕๖<br/>
+                                ๒๕๖๐
+                            </td>
+                            <td>
+                                ๒๕๕๖<br/>
+                                ๒๕๕๖
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>๒</td>
+                            <td>ช่างกลโรงงาน</td>
+                            <td>๓. เครื่องมือกล</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๓</td>
+                            <td>ช่างเชื่อมโลหะ</td>
+                            <td>๔. ผลิตภัณฑ์</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๔</td>
+                            <td>ช่างอิเล็กทรอนิกส์</td>
+                            <td>๕. อิเล็กทรอนิกส์</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๕</td>
+                            <td>ช่างอิเล็กทรอนิกส์</td>
+                            <td>๖. อิเล็กทรอนิกส์</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๖</td>
+                            <td>โยธา</td>
+                            <td>๗. โยธา</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๗</td>
+                            <td>ช่างก่อสร้าง</td>
+                            <td>๘. ก่อสร้าง</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๘</td>
+                            <td>ช่างเครื่องเรือนและตกแต่งภายใน</td>
+                            <td>๙. เครื่องเรือนและตกแต่งภายใน</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๙</td>
+                            <td>สำรวจ</td>
+                            <td>๑๐. สำรวจ</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๑๐</td>
+                            <td>สถาปัตยกรรม</td>
+                            <td>๑๑. สถาปัตยกรรม</td>
+                            <td>อุตสาหกรรม</td>
+                            <td>๒๕๕๖</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                        <tr>
+                            <td>๑๑</td>
+                            <td>เทคโนโลยีสารสนเทศ</td>
+                            <td>๑๒. เทคโนโลยีสารสนเทศ</td>
+                            <td>เทคโนโลยีสารสนเทศและการสื่อสาร</td>
+                            <td>๒๕๕๙</td>
+                            <td>๒๕๕๖</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade table-responsive bg-white border rounded-2" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">ลำดับที่</th>
+                            <th scope="col">ชื่อสาขาวิชา</th>
+                            <th scope="col">ชื่อสาขางาน</th>
+                            <th scope="col">ประเภทวิชา</th>
+                            <th scope="col">เปิดใช้ปีการศึกษา</th>
+                            <th scope="col">ใช้หลักสูตรพุทธศักราช</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                <iframe src="https://drive.google.com/file/d/1-Hrpfg1zd5eF6mMyafrGZNX2Mh4EdbXV/preview" width="640" height="480" allow="autoplay"></iframe>
+              </div>
+        </div>
+        <!-- Tabs content -->
+    </div>
+    <div class="modal fade" id="collage-info-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title"></h5>
+                        <small class="collage-info-time"></small>
+                    </div>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="boardManagerCollage" tabindex="-1" aria-labelledby="boardManagerCollageLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="boardManagerCollageLabel">ผู้บริหารวิทยาลัย</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid w-100" src="http://htc.ac.th/managefiles/image/p2.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="contactCollage" tabindex="-1" aria-labelledby="contactCollageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactCollageLabel">ช่องทางการติดต่อ</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    โทร: 074-212300<br />
+                    <img class="img-fluid w-100"
+                        src="http://htc.ac.th/managefiles/image/kittiwath/new-2561/tel/1.jpg" />
+                    <br />
+                    วิทยาลัยเทคนิคหาดใหญ่ 7 ถ.กาญจนวณิช ต. คอหงส์ อ.หาดใหญ่ จ.สงขลา 90110
+                    <br />
+                    โทร 074-212300 email : info@htc.ac.th Or kampol@htc.ac.th
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aboutCollage" tabindex="-1" aria-labelledby="aboutCollageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutCollageLabel">เกี่ยวกับวิทยาลัยเทคนิคหาดใหญ่</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center">ประวัติวิทยาลัยเทคนิคหาดใหญ่</h5>
+                    <iframe class="w-100"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" frameborder="0" height="315"
+                        src="https://www.youtube.com/embed/bnpyrWrsjss"></iframe>
+                    <p>
+                        ....วันที่ 1 กันยายน 2481 โรงเรียนประเภทอาชีวศึกษา ได้เปิดดำเนินการขึ้น
+                        ในจังหวัดสงขลาพร้อมกัน 2 โรง คือ โรงเรียนช่างไม้สงขลา
+                        และโรงเรียนการช่างสตรีสงขลา เมื่อเริ่มดำเนินการโรงเรียนช่างไม้สงขลา มีครู 2 คน
+                        คือ นายจาบ แสงจันทร์ เป็นครูใหญ่ และ นายเขื่อน เขมาภรณ์ เป็นครูน้อย มีนักเรียน 30 คน
+                        อาศัยอาคารหลังเล็กในบริเวณโรงเรียนประชาบาล 1 ตำบลบ่อยาง อำเภอเมือง จังหวัดสงขลา
+                        (โรงเรียนวิเชียรชมในปัจจุบัน) เป็นอาคารเรียนและที่ทำการ
+                        โรงฝึกงานอาศัยร่มไม้ของต้นก้ามปูและต้นหูกวาง
+                        <br />
+                        ..... ทางด้านโรงเรียนการช่างสตรีสงขลา เปิดสอนแผนกช่างเย็บผ้า และแผนกช่างทอผ้า
+                        แผนกช่างเย็บผ้า ได้เช่าห้องแถว 1 ห้อง ที่หน้าวัดดอนรักษ์ถนนไทรบุรี อ.เมือง จ.สงขลา
+                        เป็นสถานที่เรียน ต่อมาได้ย้ายมาเช่าห้องแถวใหม่ที่หน้าสาขาสมาคมรัฐธรรมนูญ
+                        ถ.กาญจนวนิช (ปัจจุบันเป็นที่ตั้งของห้องสมุดประชาชนจังหวัดสงขลา)
+                        เป็นสถานที่เรียน พ.ศ. 2482 โรงเรียนช่างไม้สงขลา และโรงเรียนการช่างสตรีสงขลา
+                        ต่างได้รับงบประมาณก่อสร้างอาคารเรียนโรงเรียนช่างไม้สงขลาได้ก่อสร้างอาคารเรียนขึ้น
+                        ที่บริเวณวัดนาถม ซึ่งร้างมานานแล้ว ส่วนโรงเรียนการช่างสตรีสงขลา
+                        ได้ก่อสร้างอาคารเรียนขึ้นในที่ดินของราชพัสดุ กับที่ดินของการรถไฟ
+                        (ซึ่งเป็นที่ตั้งของวิทยาลัยอาชีวศึกษาสงขลา ในปัจจุบัน)
+                        <br />
+                        พ.ศ.2490 ทั้งสองโรงเรียน ได้เปิดสอนถึงระดับมัธยมศึกษาตอนต้น โดยรับผู้สำเร็จชั้นป.4 เข้าเรียน
+                        <br />
+                        พ.ศ.2492 ได้ขยายชั้นเรียนสูงขึ้น เปิดสอนถึงระดับมัธยมศึกษาตอนปลาย รับผู้สำเร็จ ชั้นม.3
+                        หรือเทียบเท่าเข้าเรียน
+                        <br />
+                        พ.ศ.2493 นายจาบ แสงจันทร์ ครูใหญ่คนแรกเกษียณอายุพ้นจากตำแหน่งหน้าที่เมื่อ 8 ธันวาคม 2493
+                        และนายสุธน เจริญพงศ์ เข้ารับตำแหน่งสืบมา
+                        <br />
+                        พ.ศ.2501 โรงเรียนช่างไม้สงขลา ได้เปลี่ยนชื่อเป็น โรงเรียนการช่างสงขลา มีนายสุธน เจริญพงศ์
+                        เป็นอาจารย์ใหญ่
+                        <br />
+                        พ.ศ.2502 ได้รับความช่วยเหลือจากโครงการฝึกช่างฝีมือขององค์การสนธิสัญญา
+                        <br />
+                        ป้องกันอาเซียอาคเนย์ (ส.ป.อ. SEATO) โดยมหาวิทยาลัย ฮาไวอิ เป็นผู้ให้ความช่วยเหลือ
+                        (หมดสัญญา เมื่อ 30 มิถุนายน 2508)
+                        <br />
+                        พ.ศ.2503 โรงเรียนการช่างสงขลาได้เปิดสอนวิชาช่างอุตสาหกรรม แบ่งเป็น 6 แผนก คือ ช่างก่อสร้าง
+                        ช่างกลโรงงาน ช่างเชื่อมและโลหะแผ่น ช่างยนต์ ช่างไฟฟ้า ช่างวิทยุและโทรคมนาคม
+                        โดยรับนักเรียนที่สำเร็จชั้นม.3 กับประโยคมัธยมอาชีวศึกษาตอนต้น หลักสูตร 3 ปี เข้าเรียน
+                        <br />
+                        พ.ศ.2504 ทั้งสองโรงเรียนได้เปลี่ยนหลักสูตรและเปลี่ยนชื่อระดับชั้นเรียน โดยเรียกชื่อใหม่ว่า
+                        ชั้นมัธยมศึกษาตอนต้น สายอาชีพ รับผู้สำเร็จชั้น ม.3 หรือเทียบเท่าเข้าเรียน และชั้น
+                        มัธยมศึกษาตอนปลาย สายอาชีพ รับผู้สำเร็จชั้น ม.6 หรือเทียบเท่าเข้าเรียน
+                        <br />
+                        พ.ศ.2507 โรงเรียนการช่างสตรีสงขลาได้รับคัดเลือกเข้าอยู่ในโครงการปรับปรุง
+                        ของกรมอาชีวศึกษาด้วยความรวมมือของยูนิเซฟ
+                        จงมีการเปลี่ยนแปลงและกระบวนวิชาเรียนเป็นเปิดสอน4แผนกวิชาคือ
+                        <br />
+                        - แผนกอาหารและโภชนาการ
+                        <br />
+                        - แผนกผ้าและการตัดเย็บ
+                        <br />
+                        - แผนกวิชาคหกรรมศาสตร์
+                        <br />
+                        - แผนกวิชาศิลปหัตถกรรม
+                        <br />
+                        พ.ศ.2510 โรงเรียนการช่างสงขลา ได้ถูกจัดเป็นโรงเรียน โครงการเงินกู้พ่อพัฒนาอาชีวศึกษา
+                        พ.ศ.2510-2514
+                        <br />
+                        พ.ศ.2514 โรงเรียนการช่างสงขลา โดยนายสุธน เจริญพงศ์ ได้ย้ายมาเรียนในที่ใหม่ที่หลักกิโลเมตรที่ 25
+                        ถนนกาญจนวนิช ตำบลคอหงส์ อำเภอหาดใหญ่ และได้เปลี่ยนชื่อเป็น"โรงเรียนเทคนิคสงขลา"
+                        และปีต่อมาโรงเรียนการช่างสตรีสงขลาก็ได้เปลี่ยนชื่อเป็น"โรงเรียนอาชีวศึกษาสงขลา"
+                        <br />
+                        1 ตุลาคม 2519 ทั้งสองได้รับการยกฐานะรวมกันขึ้นเป็นวิทยาลัยอาชีวศึกษาสงขลา
+                        โดยให้โรงเรียนเทคนิคสงขลาเป็นวิทยาเขต 1 และให้โรงเรียนเทคนิคสงขลามีพื้นที่ประมาณ เป็นวิทยาเขต2
+                        <br />
+                        1 ตุลาคม 2522 โรงเรียนเทคนิคสงขลา วิทยาเขต 1 ได้แยกจากวิทยาลัยอาชีวศึกษาสงขลาซึ่งมีอยู่ 2
+                        วิทยาเขตโดยวิทยาเขต1 ได้เปลี่ยนมาเป็น
+                        วิทยาลัยเทคนิคหาดใหญ่ชึ่งตั้งอยู่เลขที่191/1ถนนกาญจนนิชอำเภอหาดใหญ่ จังหวัดสงขลามีพื้นที่ 80
+                        ไร่3งาน16.6 ตารางวาเป็นวิทยาลัยที่เปิดทำการสอนทางช่างอุตสาหกรรม
+                        <br />
+                        พ.ศ.2524 เปิดหลักสูตรระดับประกาศนียบัตรวิชาชีพเทคนิค(ปวท.)4สาขาวิชาคือ
+                        <br />
+                        1.สาขาวิชาช่างเทคนิควิศวกรรมสำรวจ
+                        <br />
+                        2.สาขาวิชาช่างเทคนิควิศวกรรมไฟฟ้า
+                        <br />
+                        3.สาขาวิชาช่างเทคนิคเครื่องเย็นและปรับอากาศ
+                        <br />
+                        4.สาขาวิชาช่างเทคนิควิศวกรรมอิเล็กทรอนิกส์
+                        <br />
+                        พ.ศ.2527 เปิดสอนหลักสูตรระดับประกาศวิชาชีพชั้นสูง(ปวส.)เพิ่มขึ้นอีก2สาขาวิชาคือ
+                        <br />
+                        1.สาขาวิชาช่างเทคนิคการผลิต
+                        <br />
+                        2.สาขาวิชาช่างอิเล็กทรอนิกส์
+                        <br />
+                        พ.ศ.2529 เปิดสอน
+                        หลักสูตรระดับประกาศนียบัตรวิชาชีพเทคนิค(ปวท.)เพิ่มขึ้นอีก1สาขาวีชาในคณะวิชาช่างกล คือ
+                        -สาขาวิชาช่างเทคนิควิศวกรรมเขียนแบบ -เปิดสอนหลักสูตรพิเศษ 1ปี ตาม โครงการอาชีวศึกษาเพื่อนาชนบท
+                        คือหลักสูตรเทคโนโลยีหมู่บ้าน
+                        <br />
+                        พ.ศ.2531 เปิดสอนหลักสูตรระดับประกาศนียบัตรวิชาชีพ(ปวช.) เพิ่มขึ้นอีก 4 สาขาวิชา
+                        เพื่อสนองความต้องการของตลาดแรงงาน คือ
+                        <br />
+                        1. สาขาวิชาช่างยนต์กลเกษตร
+                        <br />
+                        2. สาขาวิชาช่างเขียนแบบ
+                        <br />
+                        3. สาขาวิชาช่างสำรวจ
+                        <br />
+                        4. สาขาวิชาช่างเคหภัณฑ์
+                        <br />
+                        พ.ศ.2532 ลดสาขาวิชาช่างเทคนิควิศวกรรมเขียนแบบในระดับประกาศนียบัตรวิชาชีพเทคนิค (ปวท.)
+                        <br />
+                        พ.ศ.2533 ลดสาขาวิชาเรียนระดับประกาศนียบัตรวิชาชีพเทคนิค(ปวท.) 2 สาขาวิชา คือ
+                        <br />
+                        1. สาขาวิชาช่างเทคนิควิศวกรรมไฟฟ้า
+                        <br />
+                        2. สาขาวิชาช่างเทคนิควิศวกรรมอิเล็กทรอนิกส์
+                        <br />
+                        พ.ศ.2534
+                        <br />
+                        - เปิดสอนหลักสูตรระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)
+                        เพิ่มอีก 1 สาขาวิชาคือ สาขาวิชาช่างโยธา คณะวิชาการก่อสร้าง
+                        <br />
+                        - เปิดสอนภาคสมทบ หลักสูตรระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) แก่นักศึกษาผู้ใหญ่ที่กำลังทำงาน
+                        ได้มีโอกาสได้ศึกษาเพิ่มวิทยฐานะสาขาวิชาช่างเครื่องกลไฟฟ้า
+                        <br />
+                        - เข้าร่วมโครงการความร่วมมือทางวิชาการระหว่างกรมอาชีวศึกษากับ
+                        บริษัทโททาลเอ็กซ์โพรเรชั่นแอนด์โปรดักชั่นไทยแลนด์โดยจัดตั้งศูนย์ฝึกอบรม
+                        ช่างเทคนิคปฏิบัติการผลิตน้ำมันและก๊าซธรรมชาติและศูนย์ฝึกอบรมคอมพิวเตอร์
+                        ขึ้นที่วิทยาลัยเทคนิคหาดใหญ่ โครงการนี้มีกำหนด 3 ปี (ตั้งแต่ 1 กันยายน 2534-31 สิงหาคม 2537)
+                        ในปีแรกรับพนักงานเข้าฝึกอบรม จำนวน 50 คน (ระยะฝึกงานระหว่างเดือนธันวาคม 2534 - มีนาคม 2536)
+                        บริษัทได้สนับสนุนทางการเงินเพื่อจัดหาวัสดุ อุปกรณ์และครุภัณฑ์ทางการศึกษา
+                        และการพัฒนาบุคลากรคิดเป็นมูลค่า ปีละประมาณ 840,000 บาท
+                        <br />
+                        พ.ศ.2536
+                        <br />
+                        - เปิดสอนหลักสูตรระดับประกาศนียบัตรครูเทคนิคชั้นสูง (ปทส.) เทียบเท่าปริญญาตรี
+                        ในสาขาวิชาเทคนิคการผลิต (วิชาเอกเชื่อมและประสาน) เพื่อผลิตครูช่างเทคนิคที่มีความรู้ ความสามารถ
+                        ในการสอนที่มีความชำนาญเฉพาะในแต่ละสาขา รับนักศึกษาโควต้า จำนวน 20 คน
+                        <br />
+                        พ.ศ.2537
+                        <br />
+                        - เปิดสอนหลักสูตรระดับประกาศนีบัตรวิชาชีพชั้นสูง(ปวส.) เพิ่มอีก 1 สาขาวิชา
+                        ในสาขาวิชาเทคโนโลยีปิโตรเลียม และได้จัดการเรียนการสอนเป็นภาษาอังกฤษเป็นส่วนใหญ่
+                        โดยความร่วมมือของบริษัท โททาลเอ็กซ์โพรเรชั่นแอนด์โปรดักชั่น ไทยแลนด์ ร่วมกับ กรมอาชีวศึกษา
+                        รับนักศึกษา จำนวน 20 คน
+                        <br />
+                        - เปิดสอนภาคสมทบแก่นักศึกษาผู้ใหญ่ระดับประกาสนียบัตรวิชาชีพชั้นสูง(ปวส.)เพิ่มขึ้นอีก 2
+                        สาขาวิชาคือ
+                        <br />
+                        1. สาขาวิชาช่างยนต์(สาขางานเทคนิคยานยนต์)
+                        <br />
+                        2. สาขาวิชาช่างอิเล็กทรอนิกส์(สาขางานเทคนิคการสื่อสาร)
+                        <br />
+                        วิทยาลัยเทคนิคหาดใหญ่เข้าร่วมโครงการ DOVE-SAIT เป็นโครงการความร่วมมือทางวิชาการด้าน
+                        Telecomunication Training Project ระหว่างกรมอาชีวศึกษากับสถาบัน Southern Alberta Institution of
+                        Technology ประเทศแคนาดา และได้ส่งอาจารย์แผนกวิชาช่างอิเล็กทรอนิกส์ จำนวน 4 คน
+                        ไปฝึกอบรมวิชาการสื่อสาร ที่สถาบันดังกล่าว
+                        พ.ศ. 2538 เปิดสอนหลักสูตรประกาศนียบัตรวิชาชีพชั้นต้น (ปวช.) ระบบทวิภาคี 3 สาขา คือ
+                        <br />
+                        1. สาขาวิชาช่างยนต์
+                        <br />
+                        2. สาขาวิชาช่างไฟฟ้า
+                        <br />
+                        3. สาขาวิชาช่างก่อสร้าง
+                        <br />
+                        ได้มีการลงนามในข้อตกลงความร่วมมือในการขยายการเชื่อมต่อเครือข่าย Internet
+                        ระหว่างมหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่ กับวิทยาลัยเทคนิคหาดใหญ่ เมื่อวันที่ 25 เมษายน
+                        2538 จากนั้นก็ได้ดำเนินการต่อเนื่องมาจนถึงปัจจุบัน สามารถใช้งานระบบ Internet ได้โดยมี IP-Address
+                        Class C เป็น 203.150.169.xxx ภายใต้ Domain Name เป็น htc.ac.th เชื่อมต่อที่ความเร็ว 9600 bps
+                        ขณะนี้อยู่ในขั้นตอนการปรับการใช้งานความเร็วไปที่ 64 Kbps
+                        <br />
+                        พ.ศ. 2539
+                        <br />
+                        - เปิดสอนหลักสูตรประกาศนียบัตรวิชาชีพชั้นต้น (ปวช.) ระบบทวิภาคี 2 สาขา คือ
+                        <br />
+                        1. สาขาวิชาช่างเคหภัณฑ์
+                        <br />
+                        2. สาขาวิชาช่างเชื่อมโลหะ
+                        <br />
+                        - เปิดสอนหลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) สาขาวิชาการติดตั้งและควบคุม
+                        แผนกวิชาช่างไฟฟ้า พ.ศ. 2540
+                        <br />
+                        - เปิดสอนหลักสูตรประกาศนียบัตรวิชาชีพชั้นต้น ปวช.) ระบบสมทบ 2 สาขา คือ 1. สาขาวิชาช่างยนต์ 2.
+                        สาขาวิชาช่างก่อสร้าง
+                        <br />
+                        - ลดสาขาวิชาช่างเทคนิคเครื่องเย็นและปรับอากาศ (ปวท.) และเปิดสาขางานเครื่องเย็นและปรับอากาศ
+                        (ปวส.) ซึ่งรับจากนักศึกษา ม.6 แทน
+                        <br />
+                        - เปิดสอนหลักสูตรประกาศนียบัตรวิชาชีพชั้นต้น (ปวช.) สาขากลุ่มวิชาชีพแม่พิมพ์โลหะ
+                        <br />
+                        - เปิดสอนหลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) สาขาวิชาเทคโนโลยีโทรคมนาคม
+                        <br />
+                        พ.ศ. 2540
+                        <br />
+                        โครงการความร่วมมือระหว่างสถาบันเทคโนโลยีพระจอมเกล้า เจ้าคุณทหารลาดกระบัง
+                        โดยคณะครุศาสตร์อุตสาหกรรม ร่วมมือกับกรมอาชีวศึกษา
+                        เพื่อพัฒนาบุคลากรให้มีความรู้ความเข้าใจเกี่ยวกับปรัชญาโครงสร้างเทคนิค
+                        ในการบริหารอาชีวะและเทคนิคศึกษา โดยใช้สถานที่ศึกษาของวิทยาลัยเทคนิคหาดใหญ่ เป็นที่เรียน
+                        โดยใช้ชื่อว่า "ศูนย์บัณฑิตศึกษาวิทยาลัยเทคนิคหาดใหญ่" โดยรับสมัครผู้ที่มีคุณวุฒิปริญญาตรีทุกสาขา
+                        ซึ่งผู้สมัครจะต้องมีคุณสมบัติ ดังนี้
+                        <br />
+                        - มีประสบการณ์เป็นผู้บริหาร ไม่ต่ำกว่าหัวหน้างานหรือหัวหน้าแผนกขึ้นไป ในสถานประกอบการและธุรกิจ
+                        ทุกประเภท รวมทั้งหน่วยราชการทุกสังกัด - ใช้เวลาในการศึกษาเฉพาะ วันเสาร์-อาทิตย์ จำนวน 3 ปี
+                        <br />
+                        - มีนักศึกษารุ่นแรก ปี พ.ศ. 2540 จำนวน 23 คน - มีนักศึกษารุ่นที่ 2 ปี พ.ศ. 2541 จำนวน 25 คน -
+                        มีนักศึกษารุ่นที่ 3 ปี พ.ศ. 2542 จำนวน 23 คน
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-2">
+            วิทยาลัยเทคนิคหาดใหญ่ 7 ถ.กาญจนวณิช ต. คอหงส์ อ.หาดใหญ่ จ.สงขลา 90110
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            โทร 074-212300 email : info@htc.ac.th Or kampol@htc.ac.th
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+</body>
+
+</html>
